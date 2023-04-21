@@ -28,7 +28,7 @@
  * 6. which project as public directory: dist
  * 7. single page application: yes
  * 8. continuous deployment: no
- * 
+ *
  * for every time deploy
  * 1. npm run build
  * 2. firebase deploy
