@@ -10,7 +10,7 @@ const Header = () => {
   const handleLogOut = () => {
     logOut()
       .then((result) => {})
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -23,9 +23,8 @@ const Header = () => {
         <Link to="/login">Login</Link>
         <Link to="/sign-up">Sign up</Link>
         {user && (
-          <span>
-            Welcome {user.email}{" "}
-            <button onClick={handleLogOut}>Sign Out</button>
+          <span className="text-white">
+            Welcome {user.email} <button onClick={handleLogOut}>Log Out</button>
           </span>
         )}
       </div>
